@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+// font-family: 'Inter', sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+// font-family: 'Manrope', sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+// font-family: 'Montserrat', sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+// font-family: 'Roboto', sans-serif;
+
+@import "./header.scss";
+@import "./main/slider.scss";
+
+.body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
+.wrapper {
+  max-width: 1437px;
+  margin: 0 auto;
+}
+
+.nav-fixed .header {
+  margin-bottom: 85px;
+}
+
+.nav-fixed #nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  justify-content: center;
+  // column-gap: 95px;
+  // column-gap: 50px;
+  border-bottom: 1px solid #b61c1c;
+
+  margin-top: 0;
+}
