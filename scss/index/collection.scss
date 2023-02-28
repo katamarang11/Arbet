@@ -50,6 +50,18 @@
       .collection__card_top {
         padding-top: 35px;
         padding-left: 30px;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: -5px;
+          right: -68px;
+          width: 1px;
+          height: 105%;
+          background-color: #cd633d;
+          transform: rotate(18deg);
+        }
       }
 
       .card__title {
@@ -90,6 +102,24 @@
 
       & img {
         clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+      }
+
+      .img-text {
+        position: absolute;
+        right: 0;
+        color: white;
+        padding: 7px 40px 10px 31px;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(3.5px);
+        clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      &:hover .img-text {
+        opacity: 1;
+        transition: 0.3s;
       }
     }
 
