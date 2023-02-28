@@ -907,7 +907,7 @@
 .photo-gallery {
   width: 1500px;
   height: auto;
-  margin-bottom: 200px;
+  margin-bottom: 80px;
   padding-bottom: 60px;
 }
 .photo-gallery .slider {
@@ -1016,6 +1016,180 @@
     -webkit-backdrop-filter: blur(1.5px);
             backdrop-filter: blur(1.5px);
   }
+}
+
+.footer {
+  background-color: #1e1e1e;
+  padding-top: 60px;
+}
+
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid white;
+  padding-bottom: 60px;
+}
+.footer-top .footer-top__info .header__logo {
+  margin-bottom: 41px;
+  display: block;
+  margin-right: 326px;
+}
+.footer-top .footer-top__info .info-text_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 8px;
+}
+.footer-top .footer-top__info .info-text_box .info-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+}
+.footer-top .footer-top__menu {
+  margin-right: 144px;
+}
+.footer-top .footer-top__catalog {
+  margin-right: 205px;
+}
+.footer-top .footer-top__catalog ul {
+  margin-bottom: 63px;
+}
+.footer-top .footer-top__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer-top .footer-top__contacts .header__btn {
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border: 1px solid white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer-top .footer-top__contacts .header__btn svg path {
+  fill: #ffffff;
+}
+.footer-top .footer-top__contacts .tel-footer {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  position: relative;
+  margin-bottom: 12px;
+}
+.footer-top .footer-top__contacts .tel-footer::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  height: 1px;
+  width: 0%;
+  left: 50%;
+  bottom: 0;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.footer-top .footer-top__contacts .tel-footer:hover:after, .footer-top .footer-top__contacts .tel-footer:focus:after {
+  width: 100%;
+}
+.footer-top .title-footer {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 17px;
+}
+.footer-top .text-footer {
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 12px;
+  position: relative;
+}
+.footer-top .text-footer::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  height: 1px;
+  width: 0%;
+  left: 50%;
+  bottom: 0;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.footer-top .text-footer:hover:after, .footer-top .text-footer:focus:after {
+  width: 100%;
+}
+.footer-top .text-footer_email {
+  display: block;
+  width: 100%;
+}
+
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.footer-bottom .bottom-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+.footer-bottom .bottom-box p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+}
+.footer-bottom .confidentiality {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+}
+.footer-bottom .footer-bottom__kink {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer-bottom .footer-bottom__kink:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .body {
