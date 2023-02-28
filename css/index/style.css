@@ -501,6 +501,7 @@
   background-image: url(../../img/index/main/background-main.webp);
   background-repeat: no-repeat;
   background-size: 1782px 723px;
+  margin-bottom: 80px;
 }
 
 .collection {
@@ -664,6 +665,95 @@
   100% {
     opacity: 1;
   }
+}
+
+.story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.story .story__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+}
+.story .story__description .description__title {
+  color: #b61c1c;
+  font-size: 33px;
+  font-weight: 800;
+  line-height: 155%;
+  text-transform: uppercase;
+  font-family: "Manrope", sans-serif;
+  max-width: 478px;
+}
+.story .story__description .description__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 170%;
+  font-family: "Manrope", sans-serif;
+  color: black;
+  max-width: 612px;
+}
+.story .story__description .description__text span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.story .story__description .description__link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 7px;
+     -moz-column-gap: 7px;
+          column-gap: 7px;
+  max-width: 270px;
+  color: #cd633d;
+  font-size: 21px;
+  font-weight: 600;
+}
+.story .story__description .description__link::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-color: #cd633d;
+  height: 1px;
+  width: 0%;
+  left: 50%;
+  bottom: 0;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.story .story__description .description__link:hover:after, .story .story__description .description__link:focus:after {
+  width: 100%;
+}
+
+.story__video {
+  position: relative;
+  width: 704px;
+  height: auto;
+}
+.story__video iframe {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .body {
