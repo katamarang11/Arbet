@@ -1,0 +1,110 @@
+.photo-gallery__wrapper {
+  background-image: url(../../img/index/main/background-photo-gallery.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-left: 7%;
+  padding-top: 80px;
+  padding-left: 100px;
+}
+
+.photo-gallery__title {
+  color: #b61c1c;
+  font-size: 33px;
+  font-weight: 800;
+  font-family: "Manrope", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.photo-gallery {
+  width: 1500px;
+  height: auto;
+  margin-bottom: 200px;
+
+  padding-bottom: 60px;
+
+  .slider {
+    position: relative;
+    max-width: 1439px;
+    margin-bottom: 0;
+
+    .slick-dots button {
+      display: none;
+    }
+
+    & img {
+      max-width: 1439px;
+      height: 600px;
+    }
+
+    .slick-arrow {
+      margin: 0px;
+    }
+
+    .gallery__item {
+      position: absolute;
+      bottom: 10px;
+
+      display: flex;
+
+      .gallery__item--title {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: "Manrope", sans-serif;
+        padding: 15px 109px 15px 35px;
+        backdrop-filter: blur(3.5px);
+        clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+        transition: 0.2s;
+      }
+
+      .gallery__item--link {
+        background-color: #b61c1c;
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: "Manrope", sans-serif;
+        padding: 13px 33px 17px 60px;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 19% 100%);
+
+        margin-left: -32px;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #9a1818;
+          transition: 0.3s;
+          margin-left: -40px;
+        }
+      }
+
+      &:hover .gallery__item--title {
+        backdrop-filter: blur(1.5px);
+        transition: 0.2s;
+        animation: blur-change 3s infinite;
+
+        @keyframes blur-change {
+          0% {
+            backdrop-filter: blur(1.5px);
+          }
+
+          25% {
+            backdrop-filter: blur(6.5px);
+          }
+
+          50% {
+            backdrop-filter: blur(7.5px);
+          }
+
+          75% {
+            backdrop-filter: blur(6.5px);
+          }
+
+          100% {
+            backdrop-filter: blur(1.5px);
+          }
+        }
+      }
+    }
+  }
+}

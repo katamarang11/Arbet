@@ -15,9 +15,9 @@
 
 .advantages__wrapper {
   display: flex;
-  // column-gap: 152px;
   column-gap: 69px;
   align-items: center;
+  margin-bottom: 80px;
 
   .advantages__wrapper--column {
     display: flex;
@@ -104,11 +104,6 @@
 
     position: absolute;
     top: 5%;
-
-    // &:hover {
-    //   transform: scale(1);
-    //   transition: 0.3s;
-    // }
   }
 
   & .advantages-more {

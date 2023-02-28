@@ -1,7 +1,7 @@
 .collection_background {
   background-image: url(../../img/index/main/background-main.webp);
   background-repeat: no-repeat;
-  background-size: 1782px 723px;
+  background-size: 92% 100%;
 
   margin-bottom: 80px;
 }
@@ -26,8 +26,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
-
-    // opacity: 0;
 
     .collection__card {
       display: flex;
