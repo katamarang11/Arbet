@@ -1,7 +1,3 @@
-// .slick-list {
-//   overflow: hidden;
-// }
-
 .slick-track {
   display: flex;
 }
@@ -9,6 +5,7 @@
 .slider {
   overflow: hidden;
   position: relative;
+  margin-bottom: 80px;
 
   .slider__item {
     position: relative;
@@ -90,7 +87,7 @@
 
     &.slick-prev {
       left: 0;
-      background: url(../../img/main/prev-btn.svg) no-repeat rgba(255, 255, 255, 0.3);
+      background: url(../../img/index/main/prev-btn.svg) no-repeat rgba(255, 255, 255, 0.3);
       background-position: center;
       margin-left: 40px;
       transition: 0.2s;
@@ -109,7 +106,7 @@
 
     &.slick-next {
       right: 0;
-      background: url(../../img/main/next-btn.svg) no-repeat rgba(255, 255, 255, 0.3);
+      background: url(../../img/index/main/next-btn.svg) no-repeat rgba(255, 255, 255, 0.3);
       background-position: center;
       margin-right: 40px;
       transition: 0.2s;
@@ -146,8 +143,4 @@
       background-color: #cd633d;
     }
   }
-}
-
-.div {
-  margin-top: 8000px;
 }
