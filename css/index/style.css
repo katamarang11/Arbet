@@ -756,6 +756,85 @@
   left: 0;
 }
 
+.advantages {
+  padding-top: 80px;
+}
+.advantages .advantages__title {
+  color: #b61c1c;
+  font-size: 33px;
+  font-weight: 800;
+  line-height: 155%;
+  text-transform: uppercase;
+  font-family: "Manrope", sans-serif;
+  padding-bottom: 40px;
+}
+
+.advantages__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.advantages__wrapper .advantages__wrapper--column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 50px;
+}
+.advantages__wrapper .advantages__wrapper--column .advantages__content {
+  background-color: #f6f6f6;
+  max-width: 336px;
+  height: 195px;
+  padding-top: 71px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+.advantages__wrapper .advantages__wrapper--column .advantages__content .advantages__content--img {
+  position: absolute;
+  left: 27px;
+  top: -20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 9px -9px 0px 0px #f0cfc3;
+          box-shadow: 9px -9px 0px 0px #f0cfc3;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.advantages__wrapper .advantages__wrapper--column .advantages__content .advantages__content--title {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  max-width: 218px;
+}
+.advantages__wrapper .advantages__wrapper--column .advantages__content .advantages__content--text {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+}
+.advantages__wrapper .advantages__wrapper--column .advantages__content:hover .advantages__content--img {
+  left: 36px;
+  top: -29px;
+  -webkit-box-shadow: 0px 0px 0px 0px #f0cfc3;
+          box-shadow: 0px 0px 0px 0px #f0cfc3;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.advantages__background {
+  background-color: white;
+  width: 336px;
+  height: 22px;
+}
+
 .body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
