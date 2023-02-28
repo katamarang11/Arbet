@@ -10,6 +10,10 @@
   .slider__item {
     position: relative;
 
+    & img {
+      width: 100vw;
+    }
+
     .slider__item-blackout {
       position: absolute;
       width: 100%;
