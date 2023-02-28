@@ -2,9 +2,10 @@
   background-image: url(../../img/index/main/background-photo-gallery.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-left: 7%;
   padding-top: 80px;
   padding-left: 100px;
+
+  clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 8% 100%);
 }
 
 .photo-gallery__title {
@@ -20,6 +21,8 @@
   width: 1500px;
   height: auto;
   margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
 
   padding-bottom: 60px;
 
@@ -79,13 +82,12 @@
       }
 
       &:hover .gallery__item--title {
-        backdrop-filter: blur(1.5px);
         transition: 0.2s;
         animation: blur-change 3s infinite;
 
         @keyframes blur-change {
           0% {
-            backdrop-filter: blur(1.5px);
+            backdrop-filter: blur(3.5px);
           }
 
           25% {
@@ -101,7 +103,7 @@
           }
 
           100% {
-            backdrop-filter: blur(1.5px);
+            backdrop-filter: blur(3.5px);
           }
         }
       }

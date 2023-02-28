@@ -890,9 +890,10 @@
   background-image: url(../../img/index/main/background-photo-gallery.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-left: 7%;
   padding-top: 80px;
   padding-left: 100px;
+  -webkit-clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 8% 100%);
+          clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 8% 100%);
 }
 
 .photo-gallery__title {
@@ -908,6 +909,8 @@
   width: 1500px;
   height: auto;
   margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 60px;
 }
 .photo-gallery .slider {
@@ -966,8 +969,6 @@
   margin-left: -40px;
 }
 .photo-gallery .slider .gallery__item:hover .gallery__item--title {
-  -webkit-backdrop-filter: blur(1.5px);
-          backdrop-filter: blur(1.5px);
   -webkit-transition: 0.2s;
   transition: 0.2s;
   -webkit-animation: blur-change 3s infinite;
@@ -975,8 +976,8 @@
 }
 @-webkit-keyframes blur-change {
   0% {
-    -webkit-backdrop-filter: blur(1.5px);
-            backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+            backdrop-filter: blur(3.5px);
   }
   25% {
     -webkit-backdrop-filter: blur(6.5px);
@@ -991,14 +992,14 @@
             backdrop-filter: blur(6.5px);
   }
   100% {
-    -webkit-backdrop-filter: blur(1.5px);
-            backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+            backdrop-filter: blur(3.5px);
   }
 }
 @keyframes blur-change {
   0% {
-    -webkit-backdrop-filter: blur(1.5px);
-            backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+            backdrop-filter: blur(3.5px);
   }
   25% {
     -webkit-backdrop-filter: blur(6.5px);
@@ -1013,8 +1014,8 @@
             backdrop-filter: blur(6.5px);
   }
   100% {
-    -webkit-backdrop-filter: blur(1.5px);
-            backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+            backdrop-filter: blur(3.5px);
   }
 }
 
