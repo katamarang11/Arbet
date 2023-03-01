@@ -225,6 +225,11 @@
 
   padding-right: 30px;
 
+  .nav {
+    display: flex;
+    column-gap: 60px;
+  }
+
   .nav-list {
     display: flex;
     column-gap: 65px;

@@ -282,6 +282,14 @@
   padding-top: 5px;
   padding-right: 30px;
 }
+.header-nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+}
 .header-nav .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,9 +564,39 @@
 .collection .collection__cards .collection__card .collection__card_top {
   padding-top: 35px;
   padding-left: 30px;
+}
+.collection .collection__cards .collection__card .collection__card_top_1 {
   position: relative;
 }
-.collection .collection__cards .collection__card .collection__card_top::after {
+.collection .collection__cards .collection__card .collection__card_top_1::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  right: -69px;
+  width: 1px;
+  height: 105%;
+  background-color: #cd633d;
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg);
+}
+.collection .collection__cards .collection__card .collection__card_top_2 {
+  position: relative;
+}
+.collection .collection__cards .collection__card .collection__card_top_2::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  right: -63px;
+  width: 1px;
+  height: 105%;
+  background-color: #cd633d;
+  -webkit-transform: rotate(19deg);
+          transform: rotate(19deg);
+}
+.collection .collection__cards .collection__card .collection__card_top_3 {
+  position: relative;
+}
+.collection .collection__cards .collection__card .collection__card_top_3::after {
   position: absolute;
   content: "";
   top: -5px;
@@ -566,8 +604,22 @@
   width: 1px;
   height: 105%;
   background-color: #cd633d;
-  -webkit-transform: rotate(18deg);
-          transform: rotate(18deg);
+  -webkit-transform: rotate(19deg);
+          transform: rotate(19deg);
+}
+.collection .collection__cards .collection__card .collection__card_top_4 {
+  position: relative;
+}
+.collection .collection__cards .collection__card .collection__card_top_4::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  right: -66px;
+  width: 1px;
+  height: 105%;
+  background-color: #cd633d;
+  -webkit-transform: rotate(19deg);
+          transform: rotate(19deg);
 }
 .collection .collection__cards .collection__card .card__title {
   color: black;
@@ -610,33 +662,46 @@
   -webkit-clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
-.collection .collection__cards .collection__card .img-text {
-  position: absolute;
-  right: 0;
-  color: white;
-  padding: 7px 40px 10px 31px;
-  background: rgba(0, 0, 0, 0.3);
-  -webkit-backdrop-filter: blur(3.5px);
-          backdrop-filter: blur(3.5px);
-  -webkit-clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0% 100%);
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.collection .collection__cards .collection__card:hover .img-text {
-  opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
 .collection .collection__cards .card_animation-1 {
   opacity: 0;
 }
 .collection .collection__cards .card_animation-2 {
   opacity: 0;
+  position: relative;
+}
+.collection .collection__cards .card_animation-2::after {
+  position: absolute;
+  content: "Технология смешивания цвета";
+  right: 0;
+  color: white;
+  padding: 7px 48px 10px 31px;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(3.5px);
+          backdrop-filter: blur(3.5px);
+  -webkit-clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0% 100%);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
 }
 .collection .collection__cards .card_animation-3 {
   opacity: 0;
+  position: relative;
+}
+.collection .collection__cards .card_animation-3::after {
+  position: absolute;
+  content: "Натуральная мраморная крошка";
+  right: 0;
+  color: white;
+  padding: 7px 27px 10px 31px;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(3.5px);
+          backdrop-filter: blur(3.5px);
+  -webkit-clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0% 100%);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
 }
 .collection .collection__cards .card_animation-4 {
   opacity: 0;
@@ -1100,6 +1165,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .footer-top .footer-top__contacts .header__btn {
   margin-bottom: 20px;
@@ -1109,6 +1177,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 .footer-top .footer-top__contacts .header__btn svg path {
   fill: #ffffff;
@@ -1174,8 +1243,7 @@
   width: 100%;
 }
 .footer-top .text-footer_email {
-  display: block;
-  width: 100%;
+  display: inline-block;
 }
 
 .footer-bottom {

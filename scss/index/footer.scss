@@ -45,6 +45,7 @@
   .footer-top__contacts {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
     .header__btn {
       margin-bottom: 20px;
@@ -52,6 +53,7 @@
       color: white;
       border: 1px solid white;
       justify-content: center;
+      width: 100%;
 
       & svg path {
         fill: #ffffff;
@@ -133,8 +135,7 @@
   }
 
   .text-footer_email {
-    display: block;
-    width: 100%;
+    display: inline-block;
   }
 }
 
