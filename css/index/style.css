@@ -629,6 +629,9 @@
   width: 232px;
   margin-bottom: 46px;
 }
+.collection .collection__cards .collection__card .card__title_margin {
+  margin-bottom: 18px;
+}
 .collection .collection__cards .collection__card .card__btn {
   display: -webkit-box;
   display: -ms-flexbox;
